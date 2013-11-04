@@ -1,5 +1,6 @@
 Tpsociety::Application.routes.draw do
   devise_for :users
+  resources :charges
   root "pages#home"
   get "about" => "pages#about"
   
