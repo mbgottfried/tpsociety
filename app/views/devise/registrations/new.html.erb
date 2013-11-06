@@ -12,6 +12,12 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
+  <div><%= f.label :plan %><br />
+  	<%= f.radio_button :plan, 'plan 1', :checked => true %>
+  	<%= label :plan_plan1, 'Plan 1' %>
+  	<%= f.radio_button :plan, 'plan 2' %>
+  	<%= label :plan_plan2, 'Plan 2' %>
+
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 
