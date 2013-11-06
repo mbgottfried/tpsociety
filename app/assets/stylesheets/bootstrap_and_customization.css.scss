@@ -1,9 +1,7 @@
-$navbar-default-bg: #AE0831;
-$navbar-default-link-color: #ffffff;
-$navbar-default-link-hover-color: #041933;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:900,600);
 
-.center {
-	text-align: center;
-}
+$navbar-default-bg: #ffffff;
+$navbar-default-link-color: #AE0831;
+$navbar-default-link-hover-color: #041933;
 
 @import 'bootstrap';
