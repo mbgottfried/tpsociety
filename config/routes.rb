@@ -1,4 +1,6 @@
 Tpsociety::Application.routes.draw do
+  resources :subscriptions
+
   devise_for :users
   resources :charges
   root "pages#home"
