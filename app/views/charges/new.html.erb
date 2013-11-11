@@ -5,8 +5,11 @@
     </label>
   </article>
 
-  <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"></script>
+          data-description="Toilet Paper Society - New Membership"
+          data-email="<%= current_user.email %>"
+          data-amount="500"
+          data-shipping-address="True"
+          data-label="Subscribe to Our Plan"></script>
 <% end %>
